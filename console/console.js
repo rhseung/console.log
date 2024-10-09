@@ -114,5 +114,4 @@ Console.prototype.trace = function trace() {
     this.error(err.stack);
 };
 
-module.exports = new Console(Log);
-module.exports.Console = Console;
+module.exports = log => new Console(log);

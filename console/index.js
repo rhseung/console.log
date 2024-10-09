@@ -1,1 +1,1 @@
-module.exports = require('./console');
+module.exports = log => require('./console')(log);
