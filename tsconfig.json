@@ -8,7 +8,9 @@
       "esModuleInterop": true,      // Emit helpers for importing CommonJS modules
       "skipLibCheck": true,         // Skip type checking for declaration files
     },
-    "include": ["src/**/*.ts"],     // Include all TypeScript files in src folder
+    "include": [
+        "console/**/*.ts"
+    ],     // Include all TypeScript files in console folder
     "exclude": ["node_modules", "dist", "**/*.test.ts"] // Exclude test and dist files
 }
   

@@ -1,11 +1,11 @@
 {
-    "name": "ts-module-template",
+    "name": "console.log",
     "version": "1.0.0",
-    "description": "template for typescript module",
-    "main": "src/index.ts",
+    "description": "console.log implementation",
+    "main": "console/index.js",
     "directories": {
         "example": "./examples",
-        "lib": "./src",
+        "lib": "console",
         "dist": "./dist"
     },
     "scripts": {
@@ -22,9 +22,9 @@
     "author": "rhseung",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/rhseung/ts-module-template/issues"
+        "url": "https://github.com/rhseung/console.log/issues"
     },
-    "homepage": "https://github.com/rhseung/ts-module-template#readme",
+    "homepage": "https://github.com/rhseung/console.log#readme",
     "devDependencies": {
         "@babel/plugin-syntax-bigint": "^7.8.3",
         "@babel/plugin-transform-named-capturing-groups-regex": "^7.25.7",
