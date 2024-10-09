@@ -65,6 +65,10 @@ Console.prototype.error = function () {
 
 Console.prototype.warn = Console.prototype.error;
 
+Console.prototype.debug = function () {
+    this._logObj.debug(util.format.apply(this, arguments));
+};
+
 Console.prototype.time = function (label) {
     this._times[label] = Date.now();
 };
