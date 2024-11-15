@@ -29,4 +29,4 @@ const console = require('console')(GlobalLog);
 
 ## 예시
 
-<img src=https://github.com/user-attachments/assets/b7ad8984-c5da-46cc-9021-06d3ab8f8409 width=450/>
+<img src=https://github.com/user-attachments/assets/b7ad8984-c5da-46cc-9021-06d3ab8f8409 width=450>

@@ -1,5 +1,5 @@
 // example code
 
-const console = require('../console');
+const console = require('../src/.legacy');
 
 console.log("Hello, world!");

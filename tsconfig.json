@@ -9,8 +9,8 @@
       "skipLibCheck": true,         // Skip type checking for declaration files
     },
     "include": [
-        "console/**/*.ts"
-    ],     // Include all TypeScript files in console folder
+        "src/**/*.ts"
+    ],     // Include all TypeScript files in src folder
     "exclude": ["node_modules", "dist", "**/*.test.ts"] // Exclude test and dist files
 }
   

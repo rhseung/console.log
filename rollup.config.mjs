@@ -23,7 +23,7 @@ function getEntryPoints(dir) {
         const path = join(dir, file);
 
         if (fs.statSync(path).isDirectory()) {
-            const indexFile = join(path, "index.js");
+            const indexFile = join(path, "index.ts");
             if (fs.existsSync(indexFile))
                 entrypoints.push(indexFile);
             else
@@ -47,7 +47,7 @@ export default () => {
 
     return [
         {
-            input: [ join(directories.lib, "index.js"), ...(allInOne ? [] : getEntryPoints(directories.lib)) ],
+            input: [ join(directories.lib, "index.ts"), ...(allInOne ? [] : getEntryPoints(directories.lib)) ],
             output: {
                 dir: directories.dist,
                 format: "cjs",
@@ -78,7 +78,7 @@ export default () => {
                 })
             ]
         }, ...(allInOne ? [ {
-            input: directories.lib + "/index.js",
+            input: directories.lib + "/index.ts",
             output: {
                 file: directories.dist + "/index.d.ts",
                 format: "es"
